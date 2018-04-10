@@ -1,0 +1,289 @@
+/*Global styles ------------------------------------------*/
+
+/*Browser Display Specs*/
+aside, article, section, header, footer, nav {
+	display: block;
+}
+/*Limited Reset*/
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:baseline;
+	font: inherit;
+}
+body {
+	font: 100% Cantarell, Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	position: relative;
+	background: #fff;
+	color: rgb(76, 67, 65);
+	font-weight:normal;
+	font-style:normal;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	color: #667F6A;
+}
+.preview a {
+	display: block;
+	height:100%;
+}
+nav ul {
+	list-style: none;
+}
+
+/*Banner Styles ------------------------------------------*/
+.banner {
+	padding-left: 3.9%;
+	overflow: hidden;
+}
+
+.banner_img h1 {
+	text-transform: uppercase;
+	color: #405888;
+	letter-spacing: .1em;
+	text-shadow:5px 5px 10px #92a3bf;
+}
+
+/*Nav Styles ------------------------------------------*/
+#mainNav {
+	overflow: hidden;
+	margin-bottom: 1.5em;
+	border-radius: 0 0 10px 10px;
+	background-color: #92a3bf;
+}
+#mainNav li {
+	float: left;
+}
+#mainNav a {
+	display: block;
+	text-transform: uppercase;
+	border: none;
+	margin: .8em auto;
+	text-align: center;
+	padding-left: 15px;
+	color: #405888;
+}
+#mainNav a:hover {
+	color: #f5f5d1;
+}
+#mainNav a em {
+	color: #405888;
+}
+#mainNav em {
+	display: block;
+	text-transform: lowercase;
+}
+
+.flag-container {
+	margin: 2% auto;
+	text-align: center;
+}
+.flag-container img {
+	border-radius: 5%;
+}
+.destination {
+	display: inline-block;
+	padding: 2% .2%;
+}
+.destination p {
+	font-size: .8em;
+}
+
+/*Footer Styles ------------------------------------------*/
+footer {
+	width: 100%;
+	margin-top: 100px;
+	height: 100px;
+	text-align: center;
+	background-color: #92a3bf;
+}
+.contact-info a {
+	color: #d3ddee;
+	padding: 10px;
+	display: inline-block;
+}
+footer p {
+	color: #d3ddee;
+	font-size: .8em;
+}
+
+/*@Media Styles (Mobile) -----------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+	body {
+		width: 100%;
+		min-width: 320px;
+		max-width: 480px;
+	}
+
+	/*Banner Styles ------------------------------------------*/
+	.banner {
+		padding-left: 0;
+		overflow: visible;
+		background: rgb(123, 121, 143);
+		position: relative;
+		height: 100px;
+	}
+	
+	#mobile_header {
+		display: block;
+		color: #fff;
+		font-size: 1.8em;
+		font-weight: bold;
+		text-transform: lowercase;
+		text-transform: capitalize;
+		padding-left: 5%;
+		padding-top: 15px;
+		letter-spacing: 0;
+		text-shadow:0 0 0;
+	}
+	
+/*Mobile Dropdown Styles ------------------------------------------*/
+	.mobile_nav {
+		background-color: rgb(76,67,65);
+		margin-top: 17px;
+	}
+	.mobile_dropbtn {
+	    background-color: rgb(76,67,65);
+	    color: #fff;
+	    font-size: 1em;
+	    border: none;
+	    cursor: pointer;
+	    height: 2em;
+	    padding-left: 1em;
+	    padding-right: 1.5em;
+	}
+	.mobile_dropdown {
+		background-color: rgb(76,67,65);
+	    position: relative;
+	    display: inline-block;
+	}
+	.mobile_dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    min-width: 200px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+	.mobile_dropdown-content a {
+	    color: #000;
+	    padding: 5px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+	.mobile_dropdown-content a:hover {
+		background-color: #f1f1f1;
+	}
+	.mobile_dropdown:hover .mobile_dropdown-content {
+	    display: block;
+	}
+	.mobile_dropdown:hover .mobile_dropbtn {
+	   background-color: rgb(76,67,65);
+	}
+	#mainNav {
+		display: none;
+	}
+	.container {
+		margin-top: 20%;
+	}
+
+	.flag-container {
+		margin-top: 20%;
+	}
+
+	.banner_img {
+		display: none;
+	}
+}
+
+/*@Media Styles (Tablet) -----------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	body {
+		width: 95%;
+		min-width: 481px;
+		max-width: 768px;
+	}
+
+	/*Nav Styles ------------------------------------------*/
+	#mainNav ul {
+		margin-left: 2.5%;
+	}
+	#mainNav li {
+		margin-right: .5em;
+	}
+	#mainNav a {
+		font-size: 1em;
+	}
+	#mainNav em {
+		font-size: .6em;
+	}
+
+	/*Banner Styles ------------------------------------------*/
+	.banner {
+		display: none;
+	}
+
+	.flag-container {
+		text-align: left;
+		margin-left: 3.9%;
+	}
+
+	.banner_img {
+		text-align: center;
+		margin: 0 1%;
+	}
+	.banner_img h1 {
+		font-size: 2em;
+	}
+
+	.banner_img img {
+		width: 100%;
+    	height: auto;
+		border: 1px solid #405888;
+	}
+}	
+
+/*@Media Styles (Desktop) -----------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 769px) {
+	/*Global Styles ------------------------------------------*/
+	body {
+		width: 90%;
+		min-width: 1024px;
+		max-width: 1280px;
+	}
+
+	/*Nav Styles ------------------------------------------*/
+	#mainNav ul {
+		margin-left: 3.9%
+	}
+	#mainNav li {
+		margin-right: 3.6em;
+	}
+	#mainNav a {
+		font-size: 1.2em;
+	}
+	#mainNav em {
+		font-size: .8em;
+	}
+
+	/*Banner Styles ------------------------------------------*/
+	.banner {
+		display: none;
+	}
+	.banner_img {
+		margin: 0 1%;
+		text-align: center;
+	}
+	.banner_img h1 {
+		font-size: 3em;
+	}
+	.banner_img img {
+		width: 100%;
+    	height: auto;
+		border: 1px solid #405888;
+	}
+}
+	
