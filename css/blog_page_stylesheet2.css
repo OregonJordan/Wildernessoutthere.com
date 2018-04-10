@@ -1,0 +1,599 @@
+/*Global styles ------------------------------------------*/
+
+/*Browser Display Specs*/
+aside, article, section, header, footer, nav {
+	display: block;
+}
+/*Limited Reset*/
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:baseline;
+	font: inherit;
+}
+body {
+	font: 100% Cantarell, Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	position: relative;
+	background: #fff;
+	color: rgb(76, 67, 65);
+	font-weight:normal;
+	font-style:normal;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	color: #667F6A;
+}
+.preview a {
+	display: block;
+	height:100%;
+}
+nav ul {
+	list-style: none;
+}
+
+/*Banner Styles ------------------------------------------*/
+.banner {
+	padding-left: 3.9%;
+	overflow: hidden;
+}
+.banner h1 {
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: .1em;
+}
+
+.california_banner h1 {										/*Changed*/
+	text-shadow:5px 5px 10px #ff9933;
+}
+.grandCayman_banner h1 {										
+	text-shadow:5px 5px 10px #00A2E8;
+}
+.jamaica_banner h1 {										
+	text-shadow:5px 5px 10px #FED100;
+}
+.mexico_banner h1 {										
+	text-shadow:5px 5px 10px #22B14C;
+}
+
+/*Nav Styles ------------------------------------------*/
+#mainNav {
+	overflow: hidden;
+	margin-bottom: 1.5em;
+	border-radius: 0 0 10px 10px;
+	background-color: #92a3bf;
+}
+#mainNav li {
+	float: left;
+}
+#mainNav a {
+	display: block;
+	text-transform: uppercase;
+	border: none;
+	margin: .8em auto;
+	text-align: center;
+	padding-left: 15px;
+
+	color: #405888;
+}
+#mainNav a:hover {
+	color: #f5f5d1;
+}
+#mainNav a em {
+	color: #405888;
+}
+#mainNav em {
+	display: block;
+	text-transform: lowercase;
+}
+
+/*aside styles ------------------------------------------*/
+aside h2 {
+	font-family: Cardo, Georgia, serif;
+}
+.container {
+	font-family: Cardo, Georgia, serif;
+	border: 2px solid #000;
+	font-size: .75em;
+
+	background: #fff;
+}
+.container:last-of-type {
+	margin-bottom: 10%;
+}
+
+.container h1 {
+	font-size: 4em;
+}
+
+.h1-p_california {						/*Changed*/
+	color: #ff9933;
+}
+.h1-p_grandCayman {						
+	color: #00A2E8;
+}
+.h1-p_jamaica {						
+	color: #FED100;
+}
+.h1-p_mexico {						
+	color: #22B14C;
+}
+
+
+
+.description_para {
+	text-indent: 2em;
+}
+#sub-title {
+	font-size: 1.2em;
+}
+.container h3 {
+	font-size: 1.2em;
+}
+.first_row {
+	margin-bottom: 2%;
+	margin-left: 1%;
+}
+.first_row_first_item {
+	z-index: 1;
+	padding: 1%;
+	background: lightgrey;
+	border: 1px solid #000;
+	margin-right: 1%;
+}
+.first_row_second_item img {
+	border: 1px solid #000;
+}
+.first_row_third_item {
+	background: lightgrey;
+	padding: 10px;
+	border: 1px solid #000;
+	margin-right: 1%;
+}
+.first_row_third_item ul {
+	padding-left: 20px;
+}
+.second_row {
+    padding-bottom: 2%;
+    margin-left: 1%;
+}
+#img-map {
+	border: 1px solid #000;
+	background: white;
+	z-index: 1;
+}
+
+.grandCayman_img-map, .jamaica_img-map, .mexico_img-map {    /*Changed*/
+	border-radius: 50%;
+}
+.california_img-map {
+	border-radius: 20% 50% 50% 20%;
+}
+
+
+.second_row_first_item {
+	margin-right: 1%;
+}
+.second_row_second_item {
+	margin-right: 1%;
+}
+.second_row_second_item img, .second_row_third_item img {
+	border: 1px solid #000;
+}
+.see-more {
+	text-align: center;
+	margin: 5% auto;
+}
+
+.see-more button {
+	height: 4em;
+	width: 175px;
+	color: #fff;
+	border: 1px solid #000;
+}
+.see-more button:hover {
+	cursor: pointer;
+	color: #fff;
+	background: #000;
+}
+
+
+.see-more_california button {					/*Changed*/
+	background: #ff9933;	
+}
+.see-more_grandCayman button {					
+	background: #00A2E8;	
+}
+.see-more_jamaica button {					
+	background: #FED100;	
+}
+.see-more_mexico button {					
+	background: #22B14C;	
+}
+
+
+.see-more_california button:hover {					/*Changed*/
+	border: 1px solid #ff9933;
+}
+.see-more_grandCayman button:hover {				
+	border: 1px solid #00A2E8;
+}
+.see-more_jamaica button:hover {				
+	border: 1px solid #22B14C;
+}
+.see-more_mexico button:hover {				
+	border: 1px solid #FED100;
+}
+
+
+
+/*Footer Styles ------------------------------------------*/
+footer {
+	height: 100px;
+	clear: both;
+	text-align: center;
+	background-color: #92a3bf;
+}
+.contact-info a {
+	color: #d3ddee;
+	padding: 10px;
+	display: inline-block;
+}
+footer p {
+	color: #d3ddee;
+	font-size: .8em;
+}
+
+/*@Media Styles (Mobile) -----------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+body {
+		width: 100%;
+		min-width: 320px;
+		max-width: 480px;
+	}
+
+	/*Banner Styles ------------------------------------------*/
+	.banner {
+		padding-left: 0;
+		overflow: visible;
+		background: rgb(123, 121, 143);
+		position: relative;
+		height: 100px;
+	}
+	.banner h1 {
+		display: none;
+	}
+	.banner p {
+		display: none
+	}
+	.banner #mobile_header {
+		display: block;
+		color: #fff;
+		font-weight: bold;
+		text-transform: lowercase;
+		text-transform: capitalize;
+		padding-left: 5%;
+		padding-top: 15px;
+		letter-spacing: 0;
+		text-shadow:0 0 0;
+	}
+
+
+	.california_banner #mobile_header {					/*Changed*/
+		font-size: 1.5em;
+	}
+	.grandCayman_banner #mobile_header {					
+		font-size: 1.3em;
+	}
+	.jamaica_banner #mobile_header {					
+		font-size: 1.5em;
+	}
+	.mexico_banner #mobile_header {					
+		font-size: 1.8em;
+	}
+
+	
+/*Mobile Dropdown Styles ------------------------------------------*/
+	.mobile_nav {
+		background-color: rgb(76,67,65);
+		margin-top: 17px;
+	}
+	.mobile_nav_grandCaman {
+		margin-top: 25px;
+	}
+
+
+	.mobile_dropbtn {
+	    background-color: rgb(76,67,65);
+	    color: #fff;
+	    font-size: 1em;
+	    border: none;
+	    cursor: pointer;
+	    height: 2em;
+	    padding-left: 1em;
+	    padding-right: 1.5em;
+	}
+	.mobile_dropdown {
+		background-color: rgb(76,67,65);
+	    position: relative;
+	    display: inline-block;
+	}
+	.mobile_dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    min-width: 200px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+	.mobile_dropdown-content a {
+	    color: #000;
+	    padding: 5px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+	.mobile_dropdown-content a:hover {
+		background-color: #f1f1f1;
+	}
+	.mobile_dropdown:hover .mobile_dropdown-content {
+	    display: block;
+	}
+	.mobile_dropdown:hover .mobile_dropbtn {
+	   background-color: rgb(76,67,65);
+	}
+	#mainNav {
+		display: none;
+	}
+
+	/*Article Styles ------------------------------------------*/
+	.container {
+		max-width: 480px;
+		margin: 30% auto;
+		font-size: 1em;
+	}
+	.container h1 {
+		font-size: 3em;
+	}
+	.container_grandCayman h1 {									/*Changed*/
+		font-size: 2em;
+	}
+
+	.first_row {
+		margin-top: -60px;
+	}
+
+	.first_row_grandCayman {								/*Changed*/
+		margin-top: -45px;
+	}
+
+
+	.first_row_first_item, .first_row_second_item, .first_row_third_item, .second_row_first_item, .second_row_second_item {
+		margin-bottom: 5%;
+	}
+	.first_row_second_item {
+		margin-right: 1.5%;
+	}
+	.first_row_second_item img {
+		max-width: 250px;
+	}
+	.second_row_first_item {
+		width: 100%;
+    	height: auto;
+    	text-align: center;
+	}
+	.first_row_second_item, .second_row_second_item, .second_row_third_item {
+		margin-right: 1.5%;	
+		text-align: center;
+	}
+	.second_row_second_item img {
+		max-width: 200px;
+	}
+	.second_row_third_item img {
+		max-width: 300px;
+	}
+}
+
+/*@Media Styles (Tablet) -----------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	body {
+		width: 95%;
+		min-width: 500px;
+		max-width: 768px;
+	}
+
+	/*Nav Styles ------------------------------------------*/
+	#mainNav ul {
+		margin-left: 1%;
+	}
+	#mainNav li {
+		margin-right: .3em;
+	}
+	#mainNav a {
+		font-size: 1em;
+	}
+	#mainNav em {
+		font-size: .6em;
+	}
+
+	/*Banner Styles ------------------------------------------*/
+	.banner {
+		height: 225px;
+	}
+	.banner h1 {
+		padding-top: 160px;
+	}
+
+
+	.california_banner {																						/*Changed*/
+		font-size: 1.8em;																						
+		background: url(../images/blog_pages/california/california_banner_image_tablet.jpg) no-repeat;
+	}
+	.grandCayman_banner {																						
+		font-size: 1.5em;																						
+		background: url(../images/blog_pages/grandCayman/grandCayman_banner_image_tablet.jpg) no-repeat;
+	}
+	.jamaica_banner {																						
+		font-size: 2em;																						
+		background: url(../images/blog_pages/jamaica/jamaica_banner_image_tablet.jpg) no-repeat;
+	}
+	.mexico_banner {																						
+		font-size: 2em;																						
+		background: url(../images/blog_pages/mexico/mexico_banner_image_tablet.jpg) no-repeat;
+	}
+	
+	
+	/*Article Styles ------------------------------------------*/
+	.container {
+		width: 95%;
+		min-width: 500px;
+		max-width: 768px;
+		margin: 25% auto;  				
+		font-size: .8em;
+	}
+
+	.container_grandCayman h1 {									/*Changed*/
+		font-size: 3em;
+	}
+
+	.first_row {
+		margin-top: -65px;
+		display: -webkit-flex;
+		display: flex;
+	    align-items: flex-end;
+	    -webkit-flex-direction: row;
+	    flex-direction: row;
+	}
+
+	.first_row_grandCayman {								/*Changed*/
+		margin-top: -50px;
+	}
+
+
+	.first_row_first_item {
+		-webkit-flex-basis: 65%;
+		flex-basis: 65%;
+	}
+	.first_row_second_item {
+		display: none;
+	}
+	.first_row_third_item {
+		-webkit-flex-basis: 35%;
+		flex-basis: 35%;
+	}
+	.second_row {
+		display: -webkit-flex;
+		display: flex;
+	    align-items: flex-start;
+	    -webkit-flex-direction: row;
+	    flex-direction: row;
+	}
+	.second_row_second_item {
+		display: none;
+	}
+	.second_row_first_item img {
+		width: 100%;
+    	height: auto;
+	}
+	.second_row_third_item {
+		margin: 0 1%;
+	}
+	.second_row_third_item img {
+		width: 100%;
+    	height: auto;
+	}
+}	
+
+/*@Media Styles (Desktop) -----------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 769px) {
+	/*Global Styles ------------------------------------------*/
+	body {
+		width: 90%;
+		min-width: 1024px;
+		max-width: 1280px;
+	}
+
+	/*Nav Styles ------------------------------------------*/
+	#mainNav ul {
+		margin-left: 3.9%
+	}
+	#mainNav li {
+		margin-right: 3.6em;
+	}
+	#mainNav a {
+		font-size: 1.2em;
+	}
+	#mainNav em {
+		font-size: .8em;
+	}
+
+	/*Banner Styles ------------------------------------------*/
+	.banner {
+		height: 350px;
+	}
+	.banner h1 {
+		padding-top: 220px;
+	}
+
+	.california_banner {																					/*Changed*/
+		font-size: 2.8em;
+		background: url(../images/blog_pages/california/california_banner_image.jpg) no-repeat;
+	}
+	.grandCayman_banner {																				
+		font-size: 2.5em;
+		background: url(../images/blog_pages/grandCayman/grandCayman_banner_image.jpg) no-repeat;
+	}
+	.jamaica_banner {																				
+		font-size: 3em;
+		background: url(../images/blog_pages/jamaica/jamaica_banner_image.jpg) no-repeat;
+	}
+	.mexico_banner {																				
+		font-size: 3.5em;
+		background: url(../images/blog_pages/mexico/mexico_banner_image.jpg) no-repeat;
+	}
+
+
+	/*Article Styles ------------------------------------------*/
+	.container h3 {
+		font-size: 1.5em;
+	}
+	.container {
+		width: 940px;
+		margin: 20% auto;
+	}
+	.first_row {
+		margin-top: -65px;
+		display: -webkit-flex;
+		display: flex;
+	    align-items: flex-end;
+	    -webkit-flex-direction: row;
+	    flex-direction: row;
+	}
+	.first_row_first_item {
+		-webkit-flex-basis: 55%;
+		flex-basis: 55%;
+		margin-right: 1%;
+
+		padding-bottom: 8.5%;
+	}
+	.first_row_second_item {
+		margin-right: 1%;
+	}
+	.first_row_third_item {
+		-webkit-flex-basis: 25%;
+		flex-basis: 25%;
+	}
+	.second_row {
+		display: -webkit-flex;
+		display: flex;
+	    align-items: flex-start;
+	    -webkit-flex-direction: row;
+	    flex-direction: row;
+	}
+	.second_row_first_item {
+		z-index: 1;
+		margin-top: -7.5%;
+	}
+}
+	
