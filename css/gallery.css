@@ -1,0 +1,121 @@
+body {
+  font-family: sans-serif;
+  background: #000;
+
+}
+
+.pageWrap {
+  margin: 0 5%;
+}
+
+h1, h2 {
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px auto;
+  padding-top: 25px;
+} 
+.header {
+    text-transform: uppercase;
+    text-align: center;
+
+    border-top: 1px double lightgrey;
+  }
+
+.header:first-of-type {
+  border: none;
+}
+
+.main_header {
+  font-size: 2em;
+  border: none;
+}
+h2 {
+  font-size: 2em;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.flag {
+  border: 2px solid black;
+}
+.gallery {
+  margin: 30px 0 50px;
+  text-align: center;
+  padding: 25px 0;
+  background: black;
+}
+.gallery img {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  /*filter: grayscale(100);*/
+  transition: .5s;
+
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);  /* For Webkit browsers */
+  filter: gray;  /* For IE 6 - 9 */
+  -webkit-transition: all .5s ease;  /* Transition for Webkit browsers */
+
+
+}
+.gallery img:hover {
+  /*filter: grayscale(0);*/
+  transform: scale(1.1);
+  border-radius: 10%;
+
+
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%); /* For Webkit browsers */
+  filter: none;  /* For IE 6 - 9 */
+}
+
+/* NavMenu ------------------------*/
+nav ul {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+}
+
+nav li {
+  padding: .25em;
+}
+
+.mainNav {
+  font-size: 1em;
+  /*padding: 2px 0;*/
+  background: lightgrey;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.mainNav a:hover {
+  color: #000;
+}
+.mainNav a em {
+  color: rgb(76, 67, 65);
+}
+.mainNav em {
+  font-size: .8em;
+  text-transform: lowercase;
+}
+
+
+/*@Media Styles (Mobile) -----------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+  .main_header {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  .flag {
+    width: 100px;
+    border: 2px solid black;
+  }
+
+}
+
